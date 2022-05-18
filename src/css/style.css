@@ -222,6 +222,7 @@ figure {
   text-transform: uppercase;
   color: white;
   text-decoration: none;
+  white-space: nowrap;
   margin: 15px auto;
   padding: 5px 45px;
   border: 2px solid white;
@@ -322,8 +323,8 @@ figure {
 }
 
 .img__card figure {
-  width: 260px;
-  height: 380px;
+  max-width: 260px;
+  max-height: 380px;
   background-color: var(--clr-white);
 }
 
