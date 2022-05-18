@@ -260,7 +260,7 @@ figure {
 
 .deliver {
   color: white;
-  background-image: url(/assets/svg/Mass\ Circles.svg);
+  background-image: url(/assets/svg/Mass-Circles.svg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -342,7 +342,7 @@ figure {
 
 .renowned {
   color: var(--clr-white);
-  background-image: url(/assets/svg/Contour\ Line.svg);
+  background-image: url(/assets/svg/Contour-Line.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
