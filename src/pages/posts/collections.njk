@@ -1,0 +1,38 @@
+---
+  title: Collections
+  date: 2022-05-01
+  layout: regular-page.njk
+  pagination:
+    data: collectionsData.items
+    size: 6
+    alias: collectionsData.items
+  permalink: "collections/page-{{ pagination.pageNumber + 1 }}/index.html"
+---
+
+<h2 class="section__title title">Browse through our designs</h2>
+<div class="flex__cards">
+    {% for item in collectionsData.items %}
+    <div class="img__card card__shadow--dark">
+        <figure>
+        <img
+            src="{{ item.image }}"
+            alt="{{ item.product }}"
+        />
+        </figure>
+        <figcaption><p>{{ item.product }}</p></figcaption>
+    </div>
+    {% endfor %}
+</div>
+
+{% set currentUrl %}{{ page.url }}{% endset %} 
+  <div class="pagination-box">
+    <ul>
+      <li>{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">&#8810;</a>{% endif %}</li>
+
+      {% for pageEntry in pagination.pages %}
+        <li><a {% if currentUrl === pagination.hrefs[loop.index0] %} aria-current="pagination" {% endif %} href="{{ pagination.hrefs[loop.index0] }}">{{ loop.index }}</a></li>
+      {% endfor %}
+      
+      <li>{% if pagination.href.next %}<a href="{{ pagination.href.next }}">&#8811;</a>{% endif %}</li>
+    </ul>
+  </div>

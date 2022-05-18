@@ -1,0 +1,16 @@
+---
+layout: regular-page.njk
+---
+<div class="individual__article">
+    <h2 class="title section__title">{{ title }}</h2>
+    <p class="regular__paragraph"><span>{{ content | emojiReadTime }}</span> &hybull; <i class="posted">Posted on</i> {{ date | postDate }}</p>
+    <figure><img src="{{ image }}" alt="{{ imageAlt }}"></figure>
+    <figcaption class="figcap">{{ imageAlt }}</figcaption>
+    <article>
+     {{ content | safe }}
+    </article>
+</div>
+
+  <div class="center__btn">
+    <a class="regular__btn" href="/blogs">view more</a>
+  </div>

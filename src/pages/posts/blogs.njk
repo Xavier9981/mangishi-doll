@@ -1,0 +1,12 @@
+---
+date: 2022-04-01
+title: Blogs
+layout: regular-page.njk
+---
+
+<h2 class="title section__title">Blogs</h2>
+<p class="regular__paragraph">Below is a finite list of blogs which shade more light on the inspiration behind our clothing designs.</p>
+
+{%- for post in collections.featured | reverse -%} 
+{% include 'blog-snippet.njk' %} 
+{%- endfor -%}

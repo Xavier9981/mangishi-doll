@@ -1,0 +1,17 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "This is my personal portfolio website built using only HTML, CSS, and a little bit of JavaScript. I then used JAMstack so the site can be served as a static site, this was achieved by using eleventy and up staging the HTML file to a Nunjucks file.",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1"
+  },
+  "dependencies": {
+    "@11tyrocks/eleventy-plugin-emoji-readtime": "^1.0.1",
+    "normalize.css": "^8.0.1"
+  }
+}
