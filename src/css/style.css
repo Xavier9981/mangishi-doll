@@ -26,6 +26,7 @@
 
   --clr-gray-200: rgb(194, 194, 194);
   --clr-gray-400: rgb(173, 173, 173);
+  --clr-gray-700: rgb(48, 48, 48);
   --clr-gray-900: rgb(36, 36, 36);
 
   --clr-black: rgb(17, 17, 17);
@@ -328,7 +329,7 @@ figure {
 }
 
 .card__shadow--light {
-  box-shadow: 0px 0px 4px 2px var(--clr-gray-200);
+  box-shadow: 0px 0px 4px 2px var(--clr-gray-700);
   background-color: var(--clr-gray-900);
 }
 
