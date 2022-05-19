@@ -570,8 +570,11 @@ footer > div {
 
 .contact__info {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
+}
+
+.contact__info ul {
+  margin: 0 auto;
 }
 
 /* TABLE */
