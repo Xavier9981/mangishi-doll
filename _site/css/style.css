@@ -553,10 +553,10 @@ footer > div {
   justify-content: space-between;
 }
 
-/*.social__links a {
-  padding: 5px 10px;
-  margin: 0 5px;
-}*/
+.social__links a {
+  padding: 0px 5px;
+  margin: 0 15px;
+}
 
 .social__svg {
   height: 25px;
