@@ -574,6 +574,7 @@ footer > div {
 }
 
 .contact__info ul {
+  align-items: flex-start;
   margin: 0 auto;
 }
 
