@@ -13,8 +13,19 @@
   --ff-header: "Square Peg", cursive;
   --ff-primary: "Source Sans Pro", sans-serif;
   --ff-secondary: "Special Elite", cursive;
+  --ff-figcap: "Playfair Display", serif;
 
-  --clr-body: rgb(17, 17, 17);
+  --fs-12: 0.75rem;
+  --fs-15: 0.9375rem;
+  --fs-16: 1rem;
+  --fs-17: 1.0625rem;
+  --fs-20: 1.25rem;
+
+  --fw-600: 600;
+  --fw-400: 400;
+
+  --clr-gray-900: rgb(36, 36, 36);
+  --clr-black: rgb(17, 17, 17);
   --clr-dark: rgb(0, 0, 0);
   --clr-white: rgb(255, 255, 255);
 }
@@ -26,11 +37,11 @@ html {
 }
 
 body {
-  color: var(--clr-body);
-  font-family: "Source Sans Pro", sans-serif;
+  color: var(--clr-black);
+  font-family: var(--ff-primary);
   margin: 0;
   line-height: 1.5;
-  font-size: 17px;
+  font-size: var(--fs-17);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -62,7 +73,7 @@ figure {
 
 .figcap {
   text-align: center;
-  font-family: "Playfair Display", serif;
+  font-family: var(--ff-figcap);
   font-style: italic;
   margin: 0.5em auto;
 }
@@ -122,12 +133,12 @@ figure {
 .nav__button {
   border: none;
   background-color: transparent;
-  color: var(--clr-body);
+  color: var(--clr-black);
   padding: 15px 5px;
   text-decoration: none;
   font-family: var(--ff-primary);
-  font-weight: 600;
-  font-size: 17px;
+  font-weight: var(--fw-600);
+  font-size: var(--fs-17);
   letter-spacing: 1px;
   text-transform: capitalize;
 }
@@ -135,10 +146,10 @@ figure {
 .nav__link {
   padding: 15px 5px;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: var(--fw-600);
   letter-spacing: 1px;
   text-transform: capitalize;
-  color: var(--clr-body);
+  color: var(--clr-black);
 }
 
 .nav__link:hover,
@@ -166,10 +177,10 @@ figure {
 .sub__nav--link {
   padding: 10px 5px;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: var(--fw-600);
   letter-spacing: 1px;
   text-transform: capitalize;
-  color: var(--clr-body);
+  color: var(--clr-black);
 }
 
 .nav__item.active:nth-child(2) .sub__nav {
@@ -218,21 +229,21 @@ figure {
 }
 
 .regular__btn {
-  background-color: #242424;
+  background-color: var(--clr-gray-900);
   text-transform: uppercase;
-  color: white;
+  color: var(--clr-white);
   text-decoration: none;
   white-space: nowrap;
   margin: 15px auto;
   padding: 5px 45px;
-  border: 2px solid white;
+  border: 2px solid var(--clr-white);
 }
 
 .regular__btn:hover {
-  border: 2px solid #242424;
-  background-color: white;
-  color: #242424;
-  font-weight: 600;
+  border: 2px solid var(--clr-gray-900);
+  background-color: var(--clr-white);
+  color: var(--clr-gray-900);
+  font-weight: var(--fw-600);
   transition: all 1s;
 }
 
@@ -249,7 +260,7 @@ figure {
 
 .intro > div:nth-child(2) figure::before {
   content: "";
-  border: 3px #242424;
+  border: 3px var(--clr-gray-900);
   border-style: dashed;
   position: absolute;
   top: -5px;
@@ -259,7 +270,7 @@ figure {
 }
 
 .deliver {
-  color: white;
+  color: var(--clr-white);
   background-image: url(/assets/svg/Mass-Circles.svg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -311,7 +322,7 @@ figure {
 
 .card__shadow--light {
   box-shadow: 0px 0px 4px 2px rgb(194 194 194 / 30%);
-  background-color: #242424;
+  background-color: var(--clr-gray-900);
 }
 
 .card__shadow--dark {
@@ -323,13 +334,13 @@ figure {
 }
 
 .img__card figure {
-  max-width: 260px;
-  max-height: 380px;
+  width: 260px;
+  height: 380px;
   background-color: var(--clr-white);
 }
 
 .img__card figure img {
-  color: var(--clr-body);
+  color: var(--clr-black);
   display: block;
   width: 100%;
   height: 100%;
@@ -365,12 +376,12 @@ figure {
 }
 
 .text__card--renowned > p:nth-child(2) {
-  font-weight: 400;
+  font-weight: var(--fw-400);
 }
 
 .sub__title--renowned {
   font-family: var(--ff-secondary);
-  font-size: 20px;
+  font-size: var(--fs-20);
   letter-spacing: 2px;
 }
 
@@ -393,14 +404,14 @@ figure {
 }
 
 .user__card {
-  background-color: #242424;
+  background-color: var(--clr-gray-900);
   max-width: 250px;
   padding: 10px;
   margin-top: 30px;
 }
 
 .user__card > p {
-  font-size: 16px;
+  font-size: var(--fs-16);
   line-height: 1.6;
 }
 
@@ -456,7 +467,7 @@ footer > div {
 .bottom__line::after {
   content: "";
   height: 1px;
-  background-color: #242424;
+  background-color: var(--clr-gray-900);
   width: 6rem;
   display: block;
   margin: 5px auto 15px;
@@ -480,14 +491,14 @@ footer > div {
 }
 
 .inner__sub__footer > div:nth-child(3) {
-  border-top: 0.1em solid #242424;
+  border-top: 0.1em solid var(--clr-gray-900);
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap-reverse;
 }
 
 .inner__sub__footer > div:nth-child(3) p {
-  font-size: 15px;
+  font-size: var(--fs-12);
   text-align: center;
   margin: 5px 0 0 0;
 }
@@ -509,7 +520,7 @@ footer > div {
   display: block;
   width: 80%;
   height: 1px;
-  background: #242424;
+  background: var(--clr-gray-900);
   position: absolute;
   left: 0;
   top: 35%;
@@ -587,7 +598,7 @@ footer > div {
 }
 
 .table tr td:first-child {
-  font-weight: 600;
+  font-weight: var(--fw-600);
   text-align: left;
   padding: 0 5px 0 15px;
 }
@@ -679,7 +690,7 @@ footer > div {
   border-radius: 2px;
   box-shadow: var(--bs-3);
   padding: 5px 10px;
-  font-size: var(--fs-reg-15);
+  font-size: var(--fs-15);
   text-decoration: none;
 }
 
@@ -755,7 +766,6 @@ footer > div {
 
   .nav__link {
     color: inherit;
-    font-size: var(--fs-h3);
     text-decoration: none;
   }
 
@@ -812,7 +822,7 @@ footer > div {
   .hamburger,
   .hamburger::before,
   .hamburger::after {
-    background-color: #242424;
+    background-color: var(--clr-gray-900);
     height: 4px;
     width: 1.85em;
     border: 0;
